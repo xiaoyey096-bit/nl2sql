@@ -1,3 +1,5 @@
+name: nl2sql
+
 services:
 
   mysql:
@@ -9,7 +11,7 @@ services:
       MYSQL_USER: atguigu
       MYSQL_PASSWORD: Atguigu.123
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
       - ./mysql:/docker-entrypoint-initdb.d

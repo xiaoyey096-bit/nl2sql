@@ -9,7 +9,7 @@ from app.services.query_service import QueryService
 query_router = APIRouter()
 
 # 注册查询的路由
-@query_router.post('/api/query')
+@query_router.post('/query')
 async def query(q_schema: QuerySchema, q_service: QueryService = Depends(get_query_service)):
     return StreamingResponse(
         q_service.search(q_schema.query),

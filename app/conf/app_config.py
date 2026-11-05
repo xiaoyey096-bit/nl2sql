@@ -70,6 +70,8 @@ class ESConfig:
 class LLMConfig:
     model_name: str
     api_key: str
+    api_base: str = "https://api.openai.com/v1"
+    api_base: str = "https://api.openai.com/v1"
 
 
 # ==================== app总配置模型 ====================

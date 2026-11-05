@@ -5,7 +5,7 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routers.query_router import router as query_router
+from app.api.routers.query_router import query_router
 
 # 创建 FastAPI 应用
 app = FastAPI(
@@ -24,7 +24,7 @@ app.add_middleware(
 )
 
 # 注册路由
-app.include_router(query_router, prefix="/api", tags=["query"])
+app.include_router(query_router, tags=["query"])
 
 
 def main():

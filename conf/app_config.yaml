@@ -10,20 +10,20 @@ logging:
     enable: true
     level: INFO
 
-# 数据库meta的配置
+# 数据库 meta 的配置
 db_meta:
   host: localhost
-  port: 3306
-  user: atguigu
-  password: Atguigu.123
+  port: 3307
+  user: cl
+  password: DH85326606
   database: meta
-
-# 数据库dw的配置
+ 
+# 数据库 dw 的配置
 db_dw:
   host: localhost
-  port: 3306
-  user: atguigu
-  password: Atguigu.123
+  port: 3307
+  user: cl
+  password: DH85326606
   database: dw
 
 # qdrant的配置
@@ -44,7 +44,8 @@ es:
   port: 9200
   index_name: data_agent
 
-# llm的配置
+# llm 的配置
 llm:
-  model_name: deepseek-chat
-  api_key: sk-a73b0b7620594b8ab88d30b1845d9cf1
+  model_name: qwen-flash
+  api_key: sk-ws-H.PPDHDYE.yFhI.MEQCIDVofM7JvavQyQv_Y0GJDiZQhEFB5C16ApqofDF4cONFAiAJ0H2mtNauc0WPYWvshAIhMgdnCDWkDlzlxKPWE1p2kw
+  api_base: https://dashscope.aliyuncs.com/compatible-mode/v1
